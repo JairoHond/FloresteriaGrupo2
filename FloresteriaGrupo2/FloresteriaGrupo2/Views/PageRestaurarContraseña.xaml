@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FloresteriaGrupo2.Views.PageRestaurarContraseña"
+             >
+
+    <StackLayout BackgroundColor="#A7A7A7" >
+
+
+        <Grid>
+            <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                <Frame HeightRequest="300" BackgroundColor="DeepSkyBlue" Padding="0" Margin="0">
+                    <Image Source="" Aspect="AspectFill" Margin="0"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Padding="0" Margin="10,140,10,0" HorizontalOptions="FillAndExpand">
+                <Frame  BackgroundColor="White" HeightRequest="600" HasShadow="True" Padding="0" Margin="0">
+
+                    <StackLayout>
+
+
+                        <StackLayout Margin="10">
+                        </StackLayout>
+                        <Label></Label> <Label Text="Recuperar Contraseña"
+                   FontSize="Large"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"></Label>
+                        
+
+                        <StackLayout Padding="0" Margin="25,10">
+
+                           
+
+                            <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                        <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+
+                                    
+                                    
+                                    <Entry Placeholder="Ingresa tu E-mail"
+                                           x:Name="txtEmail"
+                                           HorizontalOptions="FillAndExpand">
+                                        
+                                    </Entry>
+                    
+                                    
+                                </StackLayout>
+                            </Frame>
+
+                           
+                            <Label></Label>
+                            
+                            <Button Text="Enviar Correo"
+                                    x:Name="ButtonEnviarLink"
+                                    Clicked="ButtonEnviarLink_Clicked"
+                                    CornerRadius="30"
+                                    BackgroundColor="#1964BE"
+                                    TextColor="White"></Button>
+
+                            
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+
+                                <Label></Label>
+                                <Label Text="¿Deseas Volver a la pagina principal?" TextColor="DeepSkyBlue" FontSize="Small">
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer x:Name="VolverTap"
+                                              Tapped="VolverTap_Tapped"></TapGestureRecognizer>
+                                    </Label.GestureRecognizers>
+                                </Label>
+
+
+
+                            </StackLayout>
+
+                            <StackLayout Margin="0,25,0,0" Padding="0">
+                                <Grid>
+                                    <BoxView BackgroundColor="DarkGray" HeightRequest="1" WidthRequest="250"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                                    <Frame BackgroundColor="White" HeightRequest="45" WidthRequest="105" CornerRadius="45" HasShadow="False" BorderColor="DarkGray" Margin="0" HorizontalOptions="Center" Padding="0">
+                                        <Label Text="Floreria" TextColor="DodgerBlue" FontSize="Small" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+                                    </Frame>
+
+
+                                </Grid>
+
+
+                            </StackLayout>
+
+
+                            <StackLayout Margin="0,25" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                            </StackLayout>
+
+                        </StackLayout>
+
+
+                    </StackLayout>
+
+                </Frame>
+
+
+            </StackLayout>
+
+        </Grid>
+
+
+    </StackLayout>
+
+</ContentPage>

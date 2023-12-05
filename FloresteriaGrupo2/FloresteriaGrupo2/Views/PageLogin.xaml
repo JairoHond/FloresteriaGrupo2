@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             mc:Ignorable="d"
+             x:Class="FloresteriaGrupo2.Views.PageLogin">
+
+    <StackLayout BackgroundColor="White" >
+
+
+        <Grid>
+            <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                <Frame HeightRequest="300" BackgroundColor="#F83979" Padding="0" Margin="0">
+                    <Image Source="store.png" Aspect="AspectFill" Margin="0"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Padding="0" Margin="10,300,10,0" HorizontalOptions="FillAndExpand">
+                <Frame  BackgroundColor="White" HeightRequest="600" HasShadow="True" Padding="0" Margin="0">
+
+                    <StackLayout>
+
+
+                        <StackLayout Margin="10">
+                        </StackLayout>
+                        <Label></Label>
+                        <Label Text="Iniciar sesion" TextColor="Black" HorizontalOptions="CenterAndExpand" FontSize="Large" />
+
+                        <StackLayout Padding="0" Margin="25,10">
+
+                            <Frame BackgroundColor="HotPink" BorderColor="DarkGray" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                        <Image Source="https://www.findool.com/images/avatars/avatar.png" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+
+                                    <Entry  x:Name="txtEmail" Placeholder="Correo Electronico" TextColor="Black" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                                </StackLayout>
+                            </Frame>
+
+                            <Frame BackgroundColor="HotPink" BorderColor="DarkGray" Margin="0,15,0,0" Padding="0" HorizontalOptions="FillAndExpand" CornerRadius="30">
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame BackgroundColor="SkyBlue" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                                        <Image Source="https://images.all-free-download.com/images/graphicthumb/lock_icon_6813906.jpg" Aspect="AspectFill" Margin="0"/>
+                                    </Frame>
+
+                                    <Entry x:Name="txtContrasena" Placeholder="************" IsPassword="True" TextColor="HotPink" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                                </StackLayout>
+                            </Frame>
+
+                            <StackLayout  Orientation="Horizontal">
+
+
+                                <Label Text="Olvidaste tu contraseña?" 
+                                       TextColor="DarkGray" 
+                                       FontAttributes="Italic"
+                                       HorizontalOptions="EndAndExpand" 
+                                       FontSize="15"
+                                       VerticalTextAlignment="Center" 
+                                       HorizontalTextAlignment="Center" >
+
+                                    <Label.GestureRecognizers>
+                                        <TapGestureRecognizer x:Name="ForgotTap"
+                                              Tapped="ForgotTap_Tapped"></TapGestureRecognizer>
+                                    </Label.GestureRecognizers>
+                                </Label>
+
+                            </StackLayout>
+                            <Label></Label>
+
+                            <Button  x:Name="btnIniciarSesion" Text="Iniciar" BackgroundColor="#B33AF8" TextColor="White" CornerRadius="30" Clicked="BtnIniciarSesion_Clicked"/>
+                            <Button x:Name="btnRegistrarse" Text="Registrarse" BackgroundColor="#BB187D " TextColor="White" Clicked="BtnRegistrarse_Clicked" CornerRadius="30"/>    
+                               
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                           
+
+                                <Label></Label>
+                                <Label Text="No tienes una cuenta?" TextColor="DarkGray" FontSize="Small"/>
+                        
+                            </StackLayout>
+
+                            
+
+
+                            <StackLayout Margin="0,25" Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+
+                            </StackLayout>
+
+                        </StackLayout>
+
+
+                    </StackLayout>
+
+                </Frame>
+
+
+            </StackLayout>
+
+        </Grid>
+
+        
+    </StackLayout>
+</ContentPage>

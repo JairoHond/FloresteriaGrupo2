@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1053842273107",
+    "firebase_url": "https://appfloristeria-default-rtdb.firebaseio.com",
+    "project_id": "appfloristeria",
+    "storage_bucket": "appfloristeria.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053842273107:android:5e43de964518e057d827a6",
+        "android_client_info": {
+          "package_name": "com.companyname.floresteriagrupo2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053842273107-mji4pubf80tgc9hpsf9jsn7r1vssrn6k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPLUIzV5Y1wVadE2Lx9odPCBTaD_z8u6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053842273107-mji4pubf80tgc9hpsf9jsn7r1vssrn6k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
